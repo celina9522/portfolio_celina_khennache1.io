@@ -1799,3 +1799,335 @@ body.is-preload #footer {
 	border-radius: 12px;
 	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+/* =========================================================
+   CORRECTIONS MOBILE SANS CHANGER LE RENDU PC
+   À COLLER TOUT EN BAS DU FICHIER main.css
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+	/* Base générale */
+	html {
+		font-size: 11px;
+	}
+
+	body, input, select, textarea {
+		line-height: 1.65;
+	}
+
+	#wrapper {
+		padding: 1rem 0.8rem;
+	}
+
+	/* =========================
+	   HEADER / HERO
+	========================= */
+	#header {
+		padding: 0.5rem 0;
+	}
+
+	#header > * {
+		margin-top: 1.25rem;
+	}
+
+	#header > *:before {
+		top: calc(-1.25rem - 1px);
+		height: calc(1.25rem + 1px);
+	}
+
+	#header .logo {
+		width: 4.2rem;
+		height: 4.2rem;
+		line-height: 4.2rem;
+	}
+
+	#header .logo .icon:before {
+		font-size: 1.45rem;
+	}
+
+	#header .content {
+		width: 100%;
+	}
+
+	#header .content .inner {
+		padding: 1.4rem 1rem;
+	}
+
+	#header .content p {
+		font-size: 0.95rem;
+		line-height: 1.65;
+	}
+
+	/* =========================
+	   MENU HORIZONTAL SUR MOBILE
+	========================= */
+	#header nav {
+		width: 100%;
+	}
+
+	#header nav ul {
+		display: flex !important;
+		flex-direction: row !important;   /* force horizontal */
+		flex-wrap: wrap;                  /* passe à la ligne si besoin */
+		justify-content: center;
+		align-items: center;
+		min-width: 0;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	#header nav ul li {
+		border-top: 0 !important;
+		border-left: solid 1px rgba(255, 255, 255, 0.18) !important;
+		flex: 1 1 45%;
+		min-width: 140px;
+		text-align: center;
+	}
+
+	#header nav ul li:nth-child(odd) {
+		border-left: 0 !important;
+	}
+
+	#header nav ul li a {
+		width: 100%;
+		min-width: 0;
+		height: 2.8rem;
+		line-height: 2.8rem;
+		padding: 0 0.8rem;
+		font-size: 0.68rem;
+		letter-spacing: 0.12rem;
+	}
+
+	/* =========================
+	   FENÊTRES / ARTICLES
+	========================= */
+	#main article {
+		width: 100%;
+		max-width: 100%;
+		max-height: none;
+		padding: 2rem 1rem 1.2rem 1rem;
+		border-radius: 16px;
+		overflow-x: hidden;
+	}
+
+	#main article.active {
+		max-height: none;
+	}
+
+	#main article .close {
+		top: 0.35rem;
+		right: 0.35rem;
+		width: 3rem;
+		height: 3rem;
+	}
+
+	#main article .close:before {
+		top: 0.55rem;
+		left: 0.55rem;
+		width: 1.8rem;
+		height: 1.8rem;
+		background-size: 12px 12px;
+	}
+
+	h1.major, h2.major, h3.major {
+		width: 100%;
+		max-width: 100%;
+		font-size: 1.35rem;
+		letter-spacing: 0.08rem;
+	}
+
+	h2 {
+		font-size: 1.05rem;
+		letter-spacing: 0.16rem;
+	}
+
+	h3 {
+		font-size: 0.9rem;
+		letter-spacing: 0.06rem;
+	}
+
+	p, li {
+		font-size: 0.96rem;
+		line-height: 1.7;
+	}
+
+	/* =========================
+	   INTRO
+	========================= */
+	#intro section[style] {
+		padding: 1rem 0 !important;
+	}
+
+	#intro div[style*="display: flex"] {
+		gap: 1.2rem !important;
+	}
+
+	#intro div[style*="min-width: 300px"] {
+		min-width: 0 !important;
+		width: 100%;
+	}
+
+	#intro div[style*="min-width: 250px"] {
+		min-width: 0 !important;
+		width: 100%;
+	}
+
+	#intro img {
+		max-width: 220px !important;
+	}
+
+	/* =========================
+	   COMPÉTENCES
+	========================= */
+	#competances .features,
+	.features {
+		display: grid !important;
+		grid-template-columns: 1fr !important;
+		gap: 1rem !important;
+	}
+
+	#competances .features section,
+	.features section {
+		display: flex;
+		align-items: flex-start;
+		gap: 0.9rem;
+		padding: 1rem;
+		border-radius: 12px;
+	}
+
+	#competances .features section .icon,
+	.features .icon {
+		min-width: 54px;
+		width: 54px;
+		height: 54px;
+		font-size: 1.2rem;
+		border-radius: 10px;
+	}
+
+	.features .content h3,
+	#competances .features section h3 {
+		margin-bottom: 0.35rem;
+		font-size: 0.9rem;
+		line-height: 1.45;
+	}
+
+	.features .content p,
+	#competances .features section p {
+		font-size: 0.92rem;
+		line-height: 1.65;
+	}
+
+	.skills-note {
+		margin-top: 1rem;
+		padding: 0.9rem 1rem;
+		font-size: 0.92rem;
+		line-height: 1.65;
+	}
+
+	/* =========================
+	   PROJETS
+	========================= */
+	#projects .posts,
+	.posts {
+		display: grid !important;
+		grid-template-columns: 1fr !important;
+		gap: 1rem !important;
+		justify-content: stretch !important;
+	}
+
+	#projects .posts section,
+	.posts section {
+		max-width: 100% !important;
+		width: 100% !important;
+		padding: 1rem;
+		border-radius: 12px;
+	}
+
+	#projects .posts section .image {
+		height: 180px !important;
+		border-radius: 10px;
+	}
+
+	#projects .posts section .image img,
+	.posts section .image img {
+		height: 100% !important;
+		object-fit: cover;
+	}
+
+	#projects h3 {
+		margin-top: 0.7rem;
+		font-size: 0.92rem;
+		line-height: 1.45;
+	}
+
+	/* Boutons */
+	.button,
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
+		height: 2.5rem;
+		line-height: 2.5rem;
+		padding: 0 1rem;
+		font-size: 0.68rem;
+		letter-spacing: 0.12rem;
+		white-space: normal;
+	}
+
+	/* =========================
+	   PAGE GENERIC / DÉTAILS PROJETS
+	========================= */
+	.project-gallery .row {
+		flex-wrap: wrap !important;
+		gap: 0.8rem !important;
+	}
+
+	.project-gallery .col-4 {
+		width: 100% !important;
+		flex: 0 0 100% !important;
+	}
+
+	.project-gallery .image.fit {
+		padding: 0.35rem;
+	}
+
+	.project-gallery .image.fit img {
+		height: 190px !important;
+		object-fit: contain;
+	}
+
+	/* Vidéos et images inline dans generic */
+	video,
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	/* Les blocs avec width fixe dans generic */
+	div[style*="width:500px"],
+	div[style*="width: 500px"],
+	div[style*="width:250px"],
+	div[style*="width: 250px"],
+	div[style*="max-width:300px"],
+	div[style*="max-width: 300px"] {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	/* Contact */
+	.contact-box,
+	.box {
+		padding: 1rem;
+		border-radius: 12px;
+	}
+
+	/* Footer */
+	#footer {
+		margin-top: 1rem;
+	}
+
+	#footer .copyright {
+		font-size: 0.58rem;
+		letter-spacing: 0.08rem;
+	}
+}
