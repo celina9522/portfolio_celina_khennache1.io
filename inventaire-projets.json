@@ -1,0 +1,127 @@
+[
+  {
+    "id": "punching",
+    "title": "Punching Machine — Siemens S7-1200, TIA Portal & IHM",
+    "detailTitle": "Punching Machine — Siemens S7-1200, TIA Portal & IHM",
+    "media": [
+      "images/conv.jpeg",
+      "images/api.jpeg"
+    ]
+  },
+  {
+    "id": "eolienne",
+    "title": "Conception d’une éolienne — Siemens NX",
+    "detailTitle": "Conception d’une éolienne — Siemens NX",
+    "media": [
+      "images/eoli.jpg",
+      "images/plan.jpg"
+    ]
+  },
+  {
+    "id": "empileur",
+    "title": "Empileur / dépileur de palettes — Automatisme industriel",
+    "detailTitle": "Empileur / dépileur de palettes — Automatisme industriel",
+    "media": [
+      "images/ve.mp4",
+      "images/vd.mp4"
+    ]
+  },
+  {
+    "id": "cuve",
+    "title": "Automatisation d’une cuve — GRAFCET",
+    "detailTitle": "Automatisation d’une cuve — GRAFCET & ControlExpert",
+    "media": [
+      "images/cuve.mp4",
+      "images/G.jpg"
+    ]
+  },
+  {
+    "id": "ia",
+    "title": "IA appliquée — Réseaux de neurones",
+    "detailTitle": "IA appliquée — Machine Learning & Deep Learning",
+    "media": [
+      "images/ia (2).png"
+    ]
+  },
+  {
+    "id": "image",
+    "title": "Traitement d’images — Python",
+    "detailTitle": "Traitement d’images — Contrôle qualité non destructif de tissus composites (Python)",
+    "media": [
+      "images/tissu.jpg",
+      "images/images.jpg",
+      "images/ongle.jpg"
+    ]
+  },
+  {
+    "id": "kuka",
+    "title": "Robotique industrielle — Manipulation KUKA",
+    "detailTitle": "Robotique industrielle — Communication industrielle et pilotage KUKA",
+    "media": [
+      "images/nod.jpeg",
+      "images/kuka.mp4",
+      "images/r.jpg"
+    ]
+  },
+  {
+    "id": "matlab",
+    "title": "Asservissement — MATLAB / Simulink",
+    "detailTitle": "Asservissement et régulation sous MATLAB/Simulink",
+    "media": [
+      "images/Réservoir industriel en acier inoxydable.png",
+      "images/schema.jpg",
+      "images/cuve.jpg",
+      "images/servo.png",
+      "images/simu.jpg",
+      "images/plaque.jpg"
+    ]
+  },
+  {
+    "id": "arduino",
+    "title": "Robot autonome — Arduino",
+    "detailTitle": "Robot mobile autonome – Arduino",
+    "media": [
+      "images/robot.png",
+      "images/code.jpeg",
+      "images/tra.png"
+    ]
+  },
+  {
+    "id": "ros2",
+    "title": "Robot LIMO — ROS2",
+    "detailTitle": "Robot LIMO sous ROS2",
+    "media": [
+      "images/limo.png",
+      "images/codelimo.jpg",
+      "images/gazebo.jpg"
+    ]
+  },
+  {
+    "id": "fpga",
+    "title": "FPGA — Chronomètre",
+    "detailTitle": "Projet FPGA – Chronomètre",
+    "media": [
+      "images/cronoo.jpg"
+    ]
+  },
+  {
+    "id": "labview",
+    "title": "Application LabVIEW",
+    "detailTitle": "Application LabVIEW",
+    "media": [
+      "images/diagramme.jpeg",
+      "images/lab.jpeg",
+      "images/fa.jpeg"
+    ]
+  },
+  {
+    "id": "elec",
+    "title": "Conception carte électronique",
+    "detailTitle": "Conception de carte électronique",
+    "media": [
+      "images/montage.jpg",
+      "images/tci.jpg",
+      "images/sonde.jpg"
+    ]
+  }
+]
