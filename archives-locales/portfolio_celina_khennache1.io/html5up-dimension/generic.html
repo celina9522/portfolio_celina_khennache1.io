@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!-- Contenus et ressources du site original conservés. Dimension by HTML5 UP, html5up.net | @ajlkn, CCA 3.0 : voir LICENSE.txt. -->
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#092C7F"><title>Détail du projet | KHENNACHE Celina-Fathma</title><meta name="description" content="Portfolio de KHENNACHE Celina-Fathma — Automatique, Robotique & Mécatronique. Projets techniques et compétences."><link rel="stylesheet" href="assets/css/fontawesome-all.min.css"><link rel="stylesheet" href="assets/css/portfolio.css"><script src="assets/js/portfolio.js" defer></script></head><body class="detail"><a class="skip-link" href="#main">Aller au contenu</a>
+<header class="site-header"><a class="signature" href="index.html" aria-label="CELINA FATHMA KHENNACHE — accueil">CELINA FATHMA<br><strong>KHENNACHE</strong></a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation"><span>Menu</span><span class="menu-lines" aria-hidden="true"></span></button><nav id="navigation" aria-label="Navigation principale"><a href="index.html#accueil">Accueil</a><a href="index.html#intro">À propos</a><a href="index.html#competances">Compétences</a><a href="index.html#stage">Stage</a><a href="index.html#projects">Projets</a><a class="nav-contact" href="index.html#contact">Contact <span aria-hidden="true">↗</span></a><span class="profile-links"><a href="https://cvdesignr.com/p/NQyvxdN5XDZna8K" target="_blank" rel="noopener noreferrer" title="CV — nouvel onglet">CV <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/celina-fathma-khennache-2324a834a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvTy%2B6Q4tTuyECRbl0ybCkg%3D%3D" target="_blank" rel="noopener noreferrer" title="LinkedIn — nouvel onglet">LinkedIn <span aria-hidden="true">↗</span></a></span></nav></header><main id="main" class="detail-main"><aside class="project-sidebar"><a class="text-link" href="index.html#projects">← Tous les projets</a><p class="eyebrow">Projets techniques</p><nav aria-label="Parcourir les projets"><a href="#punching">Punching Machine — Siemens S7-1200, TIA Portal & IHM</a><a href="#eolienne">Conception d’une éolienne — Siemens NX</a><a href="#empileur">Empileur / dépileur de palettes — Automatisme industriel</a><a href="#cuve">Automatisation d’une cuve — GRAFCET</a><a href="#ia">IA appliquée — Réseaux de neurones</a><a href="#image">Traitement d’images — Python</a><a href="#kuka">Robotique industrielle — Manipulation KUKA</a><a href="#matlab">Asservissement — MATLAB / Simulink</a><a href="#arduino">Robot autonome — Arduino</a><a href="#ros2">Robot LIMO — ROS2</a><a href="#fpga">FPGA — Chronomètre</a><a href="#labview">Application LabVIEW</a><a href="#elec">Conception carte électronique</a></nav></aside><article id="project-page" class="active">
+					<h1 class="major">Détail du projet</h1>
+
+					
+<section id="kuka" class="project-block">
+	<h2>Robotique industrielle — Communication industrielle et pilotage KUKA</h2>
+	<div class="box">
+	<div class="row">
+
+		<div>
+			<img src="images/nod.jpeg">
+		</div>
+		<div>
+			<video controls>
+				<source src="images/kuka.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		<div>
+			<img src="images/r.jpg">
+		</div>
+
+		
+
+	
+	</div>
+</div>
+	<p class="section-label">Contexte</p>
+	<p>Ce projet s’inscrit dans le cadre d’une mise en œuvre de <strong>communication industrielle</strong> autour d’un <strong>robot KUKA</strong>. L’objectif était de développer une architecture permettant le <strong>pilotage du robot à distance</strong> et l’échange de données en temps réel avec différents équipements au sein d’un <strong>réseau local industriel</strong>.</p>
+
+	<p class="section-label">Travail réalisé</p>
+	<p>J’ai participé à la mise en place d’une <strong>communication Ethernet basée sur TCP/IP</strong> entre le robot et un <strong>Raspberry Pi</strong>. Le robot était programmé en <strong>KRL</strong>, avec l’utilisation de <strong>fichiers SRC</strong> pour la gestion des séquences et des échanges de données.</p>
+
+	<p>Les communications étaient structurées via des <strong>fichiers XML</strong>, permettant de transmettre les commandes (déplacements, lancement de cycle) et de récupérer les états du robot (positions, statuts, informations système) de manière standardisée.</p>
+
+	<p>Le <strong>Raspberry Pi</strong> jouait un rôle de <strong>passerelle de communication</strong> avec une interface développée sous <strong>Node-RED</strong>. Cette interface permettait :</p>
+	<ul>
+		<li>le pilotage à distance du robot</li>
+		<li>la visualisation des données en temps réel</li>
+		<li>la supervision des échanges entre les équipements</li>
+	</ul>
+
+	<p>En complément, j’ai mis en place une communication basée sur le protocole <strong>MQTT</strong> afin de permettre le <strong>partage de données en temps réel</strong> avec une <strong>caméra connectée sur le même réseau local</strong>. Cette architecture publish/subscribe permettait d’échanger efficacement des informations (états, déclenchements, données de vision) entre le robot, la caméra et le système de supervision.</p>
+
+	<p>Le robot KUKA exploitait ces données pour <strong>enrichir son comportement</strong>, notamment en intégrant des informations externes dans la logique de décision (déclenchement d’actions, adaptation du cycle, interaction avec l’environnement).</p>
+
+	<p>Une attention particulière a été portée à la <strong>fiabilité des communications réseau</strong>, à la <strong>synchronisation des flux de données</strong> et à la <strong>gestion des connexions</strong>. Des phases de <strong>tests et validation</strong> ont permis de garantir la stabilité du système et la cohérence des échanges en conditions réelles.</p>
+
+	<p class="section-label">Compétences mobilisées</p>
+	<p>Robotique KUKA, KRL, communication TCP/IP, Ethernet industriel, MQTT, XML, Raspberry Pi, Node-RED, systèmes distribués, intégration capteurs, validation.</p>
+<nav class="project-pagination" aria-label="Autres projets"><a href="#image"><span>← Projet précédent</span><strong>Traitement d’images — Python</strong></a><a href="#matlab"><span>Projet suivant →</span><strong>Asservissement — MATLAB / Simulink</strong></a></nav></section>
+
+<section id="punching" class="project-block">
+	<h2>Punching Machine — Siemens S7-1200, TIA Portal & IHM</h2>
+
+	<div class="box">
+	<div class="row">
+
+		<div>
+			<img src="images/conv.jpeg">
+		</div>
+
+		
+
+		<div>
+			<img src="images/api.jpeg">
+		</div>
+
+	</div>
+</div>
+
+	<p class="section-label">Contexte</p>
+	<p>Ce projet porte sur l’automatisation d’une <strong>station de poinçonnage équipée d’un convoyeur</strong>, pilotée par un <strong>automate Siemens S7-1200</strong> et supervisée via une <strong>IHM KTP</strong>, le tout développé sous <strong>TIA Portal</strong>. L’objectif était de concevoir un système automatisé complet à partir d’un <strong>cahier des charges industriel</strong>, en intégrant la logique de commande, la gestion des modes et la supervision opérateur.</p>
+
+	<p class="section-label">Cahier des charges</p>
+	<p>Le système devait assurer un <strong>cycle automatique de poinçonnage</strong> basé sur les éléments suivants :</p>
+	<ul>
+		<li>détection d’une pièce en entrée via un <strong>phototransistor (I1)</strong></li>
+		<li>convoyage de la pièce jusqu’au poste de poinçonnage</li>
+		<li>arrêt du convoyeur lorsque la pièce est détectée sous le punch (<strong>I2</strong>)</li>
+		<li>descente du poinçon jusqu’à la position basse (<strong>I4</strong>) puis remontée en position haute (<strong>I3</strong>)</li>
+		<li>évacuation de la pièce par convoyeur en sens inverse (<strong>Q2</strong>)</li>
+	</ul>
+
+	<p>Le système intègre également plusieurs contraintes :</p>
+	<ul>
+		<li><strong>mode automatique</strong> (cycle complet)</li>
+		<li><strong>mode manuel</strong> pour pilotage direct des actionneurs</li>
+		<li><strong>gestion des états (initialisation, fonctionnement, arrêt)</strong></li>
+		<li><strong>arrêt d’urgence</strong> avec remise à zéro du système</li>
+	</ul>
+
+	<p class="section-label">Travail réalisé</p>
+	<p>J’ai réalisé une <strong>analyse des entrées/sorties</strong> du système, en identifiant les capteurs (phototransistors, positions du poinçon) et les actionneurs (convoyeur avant/arrière, montée/descente du punch).</p>
+
+	<p>À partir de cette analyse, j’ai conçu un <strong>GRAFCET de fonctionnement normal</strong> décrivant les différentes étapes du cycle automatique. En l’absence du langage SFC, j’ai implémenté ce GRAFCET sous forme de <strong>logique séquentielle en langage Ladder (LD)</strong>, en codant les transitions et en utilisant une variable d’état (type <strong>mot d’étape</strong>) pour piloter le cycle.</p>
+
+	<p>Le programme a été structuré en plusieurs blocs :</p>
+	<ul>
+		<li>un bloc principal <strong>OB1</strong> assurant l’exécution cyclique</li>
+		<li>des <strong>fonctions (FC)</strong> pour la gestion des sorties</li>
+		<li>une organisation modulaire facilitant la lisibilité et la maintenance</li>
+	</ul>
+
+	<p>J’ai également implémenté les <strong>modes de marche et d’arrêt (GEMMA)</strong>, avec gestion :</p>
+	<ul>
+		<li>du <strong>mode automatique</strong> (production)</li>
+		<li>du <strong>mode manuel</strong> (pilotage direct)</li>
+		<li>des conditions de transition entre les modes</li>
+		<li>de l’<strong>arrêt d’urgence</strong> avec retour à l’état initial</li>
+	</ul>
+
+	<p>En parallèle, j’ai développé une <strong>interface homme-machine (IHM)</strong> sous TIA Portal permettant :</p>
+	<ul>
+		<li>la sélection du mode Auto / Manuel</li>
+		<li>l’initialisation du système</li>
+		<li>le pilotage manuel des actionneurs (convoyeur, poinçon)</li>
+		<li>la visualisation des états capteurs (I1, I2, I3, I4)</li>
+		<li>l’affichage des états du système (Auto, Manuel, Arrêt d’urgence)</li>
+	</ul>
+
+	<p>Enfin, des phases de <strong>tests et validation</strong> ont été réalisées afin de vérifier la cohérence du cycle, la gestion des transitions et la robustesse du système en conditions simulées et réelles.</p>
+
+	<p class="section-label">Compétences mobilisées</p>
+	<p>Automatisme Siemens, S7-1200, TIA Portal, Ladder (LD), GRAFCET, GEMMA, IHM, logique séquentielle, structuration OB/FC, validation système.</p>
+<nav class="project-pagination" aria-label="Autres projets"><a href="#elec"><span>← Projet précédent</span><strong>Conception carte électronique</strong></a><a href="#eolienne"><span>Projet suivant →</span><strong>Conception d’une éolienne — Siemens NX</strong></a></nav></section>
+
+
+
+<section id="empileur" class="project-block">
+	<h2>Empileur / dépileur de palettes — Automatisme industriel</h2>
+<div>
+
+	<div>
+		<video controls>
+			<source src="images/ve.mp4" type="video/mp4">
+		</video>
+		<p>Fonctionnement du système d’empilage automatique</p>
+	</div>
+
+	<div>
+		<video controls>
+			<source src="images/vd.mp4" type="video/mp4">
+		</video>
+		<p>Fonctionnement du système de dépilage automatique</p>
+	</div>
+
+</div>
+
+
+	<p class="section-label">Contexte</p>
+	<p>Ce projet consiste en l’automatisation d’un système d’<strong>empilage et de dépilage de palettes</strong>, basé sur une <strong>machine virtuelle industrielle (POV)</strong> reproduisant un équipement réel de la société ERM Automatismes Industriels. L’objectif était de modéliser et programmer le comportement du système à partir d’un <strong>dossier technique complet</strong>.</p>
+
+	<p>Le système repose sur une architecture <strong>pneumatique</strong> intégrant plusieurs <strong>vérins</strong>, un <strong>convoyeur motorisé</strong> et des <strong>capteurs de position (ILS, fins de course)</strong>, permettant de gérer la prise, le déplacement et le stockage des palettes.</p>
+
+	<p class="section-label">Travail réalisé</p>
+	<p>J’ai débuté par une <strong>analyse approfondie du dossier technique</strong>, incluant l’identification des <strong>capteurs (B1 à B10)</strong> et des <strong>actionneurs</strong> (vérins pneumatiques, moteur de convoyeur). Cette étape m’a permis de comprendre les différentes phases du cycle ainsi que les interactions entre les éléments du système.</p>
+
+	<p>J’ai ensuite défini les <strong>conditions logiques</strong> permettant de déterminer les états du système, notamment :</p>
+	<ul>
+		<li>la position des <strong>taquets de prise de palette</strong> (entrés / sortis)</li>
+		<li>la position de l’<strong>élévateur</strong> (haut, intermédiaire, bas)</li>
+	</ul>
+
+	<p>À partir de cette analyse, j’ai élaboré un <strong>GRAFCET de niveau 2</strong> décrivant le cycle complet d’empilage : prise de palette, montée de l’élévateur, positionnement, dépôt et retour à l’état initial. Ce GRAFCET intègre les <strong>conditions de transition basées sur les capteurs</strong> ainsi que la coordination des différents actionneurs.</p>
+
+	<p>Le programme a ensuite été implémenté sous <strong>ControlExpert</strong>, en utilisant les sections de lecture/écriture des entrées-sorties déjà fournies. J’ai complété la logique dans le programme principal en structurant les actions et transitions de manière claire et modulaire.</p>
+
+	<p>Une phase importante du projet a été la <strong>validation par simulation</strong> via la plateforme POV. J’ai pu :</p>
+	<ul>
+		<li>tester individuellement chaque actionneur en mode manuel</li>
+		<li>vérifier la cohérence du cycle automatisé</li>
+		<li>analyser le comportement du système en conditions réelles simulées</li>
+	</ul>
+
+
+	<p>Enfin, j’ai enrichi le système avec des fonctionnalités avancées :</p>
+	<ul>
+		<li>mise en place d’un <strong>mode dépilage</strong></li>
+		<li><strong>synchronisation des modes</strong> via un GRAFCET de conduite</li>
+		<li>gestion de l’<strong>arrêt d’urgence</strong> avec réinitialisation du système</li>
+		<li>ajout d’un <strong>compteur de palettes (CTUD)</strong> pour arrêt automatique après un nombre défini</li>
+		<li>implémentation d’un <strong>mode coup par coup</strong> pour fonctionnement pas à pas</li>
+	</ul>
+
+	<p class="section-label">Compétences mobilisées</p>
+	<p>Automatisme industriel, ControlExpert, GRAFCET niveau 2, logique séquentielle, pneumatique industrielle, capteurs/actionneurs, simulation POV, compteur CTUD, gestion des modes, validation système.</p>
+<nav class="project-pagination" aria-label="Autres projets"><a href="#eolienne"><span>← Projet précédent</span><strong>Conception d’une éolienne — Siemens NX</strong></a><a href="#cuve"><span>Projet suivant →</span><strong>Automatisation d’une cuve — GRAFCET</strong></a></nav></section>
+
+<section id="cuve" class="project-block">
+	<h2>Automatisation d’une cuve — GRAFCET & ControlExpert</h2>
+<div>
+
+	<div>
+		<video controls>
+			<source src="images/cuve.mp4" type="video/mp4">
+		</video>
+		<p>Fonctionnement de la cuve</p>
+	</div>
+
+	<div>
+		<img src="images/G.jpg">
+		<p>GRAFCET du système</p>
+	</div>
+
+</div>
+	<p class="section-label">Contexte</p>
+	<p>Ce projet porte sur le développement d’un système automatisé permettant la <strong>gestion du niveau d’une cuve</strong>, en s’appuyant sur une approche structurée basée sur le <strong>GRAFCET</strong> et l’environnement <strong>ControlExpert</strong>. L’objectif était de concevoir un programme capable de piloter un procédé industriel simple tout en intégrant les contraintes de fonctionnement, de sécurité et de modes opératoires.</p>
+
+	<p>Le système étudié est constitué de deux actionneurs principaux : une <strong>pompe de remplissage</strong> et une <strong>vanne de vidange</strong>, ainsi que de plusieurs capteurs de niveau (<strong>niveau bas, niveau haut, sécurité bas, sécurité haut</strong>) permettant de superviser l’état de la cuve.</p>
+
+	<p class="section-label">Cahier des charges</p>
+	<p>Le fonctionnement attendu repose sur un <strong>cycle automatique de remplissage / vidange</strong> :</p>
+	<ul>
+		<li>Au démarrage, la cuve est à l’arrêt avec <strong>pompe inactive</strong> et <strong>vanne fermée</strong></li>
+		<li>Un appui sur <strong>“Démarrage cycle”</strong> lance le remplissage via la pompe</li>
+		<li>Lorsque le <strong>niveau haut</strong> est atteint, la pompe s’arrête</li>
+		<li>Après une temporisation, la <strong>vanne s’ouvre</strong> pour vidanger la cuve</li>
+		<li>Lorsque le <strong>niveau bas</strong> est atteint, la vanne se ferme et un nouveau cycle démarre</li>
+	</ul>
+
+	<p>Le système devait également intégrer :</p>
+	<ul>
+		<li>un <strong>arrêt cycle contrôlé</strong> (fin du cycle en cours avant arrêt)</li>
+		<li>une <strong>temporisation</strong> entre les phases (ex : maintien au niveau haut)</li>
+		<li>un <strong>compteur de cycles</strong> (arrêt automatique après un nombre défini)</li>
+		<li>une gestion des <strong>modes de marche et d’arrêt (GEMMA)</strong></li>
+		<li>un système de <strong>sécurité</strong> (débordement ou niveau critique)</li>
+	</ul>
+
+	<p class="section-label">Travail réalisé</p>
+	<p>J’ai commencé par élaborer un <strong>GRAFCET fonctionnel</strong> décrivant les différentes étapes du cycle (remplissage, attente, vidange) ainsi que les conditions de transition associées (capteurs de niveau, temporisations).</p>
+
+	<p>Ce GRAFCET a ensuite été implémenté sous <strong>ControlExpert</strong>, en utilisant des <strong>sections de programme dédiées</strong> et en structurant les transitions en langage <strong>ST (Structured Text)</strong> ou <strong>LD (Ladder)</strong>. Le programme a été conçu de manière modulaire afin de faciliter la lisibilité et l’évolution.</p>
+
+	<p>J’ai intégré des <strong>temporisations (TON)</strong> pour gérer les délais entre les actions (notamment le maintien au niveau haut avant vidange), ainsi qu’un <strong>compteur (CTU)</strong> permettant de limiter le nombre de cycles exécutés.</p>
+
+	<p>Une partie importante du projet a consisté à mettre en œuvre un <strong>GRAFCET de conduite (GEMMA)</strong>, permettant de gérer les différents modes :</p>
+	<ul>
+		<li>mode automatique</li>
+		<li>arrêt contrôlé</li>
+		<li>redémarrage du système</li>
+	</ul>
+
+	<p>J’ai également développé un <strong>GRAFCET de sécurité</strong> permettant de gérer les situations critiques. En cas d’atteinte du <strong>niveau haut de sécurité</strong>, le système force l’arrêt du cycle, coupe la pompe et ouvre la vanne jusqu’à vidange complète (niveau bas de sécurité), avant retour à l’état initial.</p>
+
+	<p>Enfin, l’ensemble du programme a été testé en <strong>mode simulation</strong>, en utilisant un environnement permettant de reproduire le comportement des capteurs et actionneurs. Cette phase m’a permis de valider la cohérence du GRAFCET, la gestion des transitions et la robustesse du système face aux différents scénarios de fonctionnement.</p>
+
+	<p class="section-label">Compétences mobilisées</p>
+	<p>Automatisme industriel, ControlExpert, GRAFCET, GEMMA, logique séquentielle, temporisation (TON), compteur (CTU), simulation, gestion des sécurités, validation fonctionnelle.</p>
+<nav class="project-pagination" aria-label="Autres projets"><a href="#empileur"><span>← Projet précédent</span><strong>Empileur / dépileur de palettes — Automatisme industriel</strong></a><a href="#ia"><span>Projet suivant →</span><strong>IA appliquée — Réseaux de neurones</strong></a></nav></section>
+
+<section id="eolienne" class="project-block">
+	<h2>Conception d’une éolienne — Siemens NX</h2>
+	<div class="box">
+	<div class="row">
+
+		<div>
+			<img src="images/eoli.jpg">
+		</div>
+
+		
+		<div>
+			<img src="images/plan.jpg">
+		</div>
+
+	</div>
+</div>
+
+
+	<p class="section-label">Contexte</p>
+	<p>Projet de <strong>conception mécanique</strong> visant à modéliser une <strong>éolienne complète</strong> sous <strong>Siemens NX</strong>, en suivant une démarche d’ingénierie structurée allant de l’analyse du besoin jusqu’à la réalisation d’un assemblage fonctionnel.</p>
+
+	<p class="section-label">Travail réalisé</p>
+	<p>J’ai défini un <strong>cahier des charges fonctionnel</strong> en prenant en compte les contraintes mécaniques, structurelles et environnementales. J’ai ensuite conçu les différentes pièces du système (pales, mât, nacelle, supports) en utilisant les outils de <strong>modélisation paramétrique</strong> de Siemens NX.</p>
+	<p>Chaque composant a été dimensionné et assemblé dans un <strong>modèle 3D complet</strong>, en respectant les contraintes d’alignement, d’interface et de cohérence mécanique. Une attention particulière a été portée à la <strong>gestion des assemblages</strong>, aux liaisons mécaniques et à la structuration du projet CAO.</p>
+
+	<p class="section-label">Compétences mobilisées</p>
+	<p>CAO, Siemens NX, conception mécanique, modélisation 3D, assemblage, analyse fonctionnelle, conception paramétrique.</p>
+<nav class="project-pagination" aria-label="Autres projets"><a href="#punching"><span>← Projet précédent</span><strong>Punching Machine — Siemens S7-1200, TIA Portal & IHM</strong></a><a href="#empileur"><span>Projet suivant →</span><strong>Empileur / dépileur de palettes — Automatisme industriel</strong></a></nav></section>
+
+
+
+
+				
+<section id="ia" class="project-block">
+	<h2>IA appliquée — Machine Learning & Deep Learning</h2>
+					<div class="project-gallery">
+		<div class="row gtr-50 gtr-uniform">
+			
+			<div class="col-12">
+				<span class="image fit">
+					<img src="images/ia (2).png" alt="Résultats Machine Learning et Deep Learning">
+				</span>
+			</div>
+
+		</div>
+	</div>
+
+	<p class="section-label">Contexte</p>
+	<p>Ce projet regroupe plusieurs travaux pratiques en <strong>intelligence artificielle appliquée</strong>, centrés sur la mise en œuvre de modèles de <strong>Machine Learning</strong> et de <strong>Deep Learning</strong> à partir de données réelles. L’objectif était de maîtriser les différentes étapes d’un pipeline IA complet : préparation des données, entraînement, évaluation et interprétation des modèles.</p>
+
+	<p class="section-label">Travail réalisé</p>
+	<p>J’ai travaillé sur plusieurs types de modèles :</p>
+	<ul>
+		<li><strong>Régression linéaire</strong> pour modéliser des relations entre variables</li>
+		<li><strong>Classification binaire</strong> pour la prise de décision (ex : séparation de classes)</li>
+		<li><strong>Réseaux de neurones (MLP)</strong> implémentés from scratch puis avec des frameworks</li>
+		<li><strong>Deep Learning avec PyTorch</strong>, notamment sur le dataset <strong>MNIST</strong> (reconnaissance de chiffres)</li>
+	</ul>
+
+	<p>Le travail a porté sur :</p>
+	<ul>
+		<li>la <strong>préparation et structuration des datasets</strong> (normalisation, séparation train/test)</li>
+		<li>l’implémentation des modèles et des fonctions de coût</li>
+		<li>l’optimisation via <strong>descente de gradient</strong> et ajustement des hyperparamètres</li>
+		<li>l’analyse des performances (accuracy, loss, overfitting)</li>
+		<li>l’utilisation d’un environnement de travail sous <strong>Jupyter Notebook</strong> avec environnement Python dédié</li>
+	</ul>
+
+	<p>Une attention particulière a été portée à la <strong>compréhension des mécanismes internes des modèles</strong>, notamment la propagation avant (forward) et la rétropropagation du gradient (backpropagation) dans les réseaux de neurones.</p>
+
+	<p class="section-label">Compétences mobilisées</p>
+	<p>Python, Machine Learning, Deep Learning, PyTorch, réseaux de neurones (MLP), préparation de données, descente de gradient, évaluation de modèles, Jupyter Notebook.</p>
+<nav class="project-pagination" aria-label="Autres projets"><a href="#cuve"><span>← Projet précédent</span><strong>Automatisation d’une cuve — GRAFCET</strong></a><a href="#image"><span>Projet suivant →</span><strong>Traitement d’images — Python</strong></a></nav></section>
+					
+					
+					<section id="ros2" class="project-block">
+						<h2>Robot LIMO sous ROS2</h2>
+
+						<div class="project-gallery">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><span class="image fit"><img src="images/limo.png" alt="Robot LIMO"></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/codelimo.jpg" alt="Code ROS2"></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/gazebo.jpg" alt="Simulation Gazebo"></span></div>
+							</div>
+						</div>
+
+						<p>Aujourd’hui, les architectures robotiques modernes reposent de plus en plus sur des frameworks comme <strong>ROS2</strong>, notamment dans les domaines de la robotique mobile, de la logistique intelligente ou encore des véhicules autonomes. C’est dans ce contexte que j’ai travaillé sur le robot <strong>LIMO</strong>, avec l’objectif de concevoir une solution capable de fonctionner à la fois en mode manuel et en mode autonome.</p>
+
+						<p>J’ai développé ce projet dans un environnement basé sur <strong>ROS2</strong> et <strong>Gazebo</strong>, en adoptant une architecture <strong>modulaire</strong> et structurée. Le système a été organisé en plusieurs <strong>nœuds</strong> distincts — perception, décision et commande — qui communiquent entre eux via les mécanismes de ROS2. Cette manière de concevoir le projet s’inscrit dans une logique proche de l’<strong>orienté objet</strong> et de l’ingénierie logicielle moderne.</p>
+
+						<p>Le robot devait fonctionner selon deux modes. En <strong>mode manuel</strong>, activé via joystick, j’ai implémenté la gestion des commandes de vitesse linéaire et angulaire pour assurer un pilotage stable. En <strong>mode autonome</strong>, le robot devait sortir d’un labyrinthe en appliquant une stratégie de <strong>suivi du mur gauche</strong>. J’ai donc développé une logique de navigation capable d’ajuster la trajectoire en fonction des distances mesurées.</p>
+
+						<p>Un point particulièrement important du projet a été la <strong>gestion de la sécurité</strong>. J’ai mis en place des règles de décision basées sur la détection d’obstacles : blocage de l’avancement lorsqu’un mur est détecté à moins de 30 cm et recul contrôlé lorsqu’il est détecté à moins de 50 cm.</p>
+
+						<p>Ce projet m’a réellement fait évoluer dans ma manière de travailler. Il ne s’agissait plus seulement d’écrire du code, mais de <strong>concevoir un système</strong> complet, lisible et évolutif. Il m’a aussi donné envie d’aller plus loin sur des sujets aujourd’hui très utilisés en robotique, comme la <strong>fusion de capteurs</strong>, les algorithmes de <strong>SLAM</strong> ou encore la gestion avancée des communications sous ROS2.</p>
+					<nav class="project-pagination" aria-label="Autres projets"><a href="#arduino"><span>← Projet précédent</span><strong>Robot autonome — Arduino</strong></a><a href="#fpga"><span>Projet suivant →</span><strong>FPGA — Chronomètre</strong></a></nav></section>
+
+
+					
+					<section id="matlab" class="project-block">
+						<h2>Asservissement et régulation sous MATLAB/Simulink</h2>
+
+						<p><strong>Régulation du niveau d’eau d’une cuve</strong></p>
+
+						<div class="project-gallery">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><span class="image fit"><img src="images/Réservoir industriel en acier inoxydable.png" alt="Cuve industrielle réelle"></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/schema.jpg" alt="Schéma de régulation Simulink"></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/cuve.jpg" alt="Schéma de principe de la cuve"></span></div>
+							</div>
+						</div>
+
+						<p>Ce projet m’a permis de travailler sur une problématique classique en automatique, directement liée à des applications industrielles telles que le traitement de fluides, les procédés chimiques ou encore la gestion de réservoirs. À partir des lois physiques du système, j’ai construit un modèle représentant l’évolution du niveau d’eau dans une cuve, puis j’ai exploité <strong>MATLAB/Simulink</strong> pour analyser son comportement.</p>
+
+						<p>J’ai d’abord étudié le procédé en <strong>boucle ouverte</strong> afin de comprendre sa dynamique propre, avant de mettre en place une <strong>commande proportionnelle</strong>. Le réglage a été réalisé avec un objectif clair de précision en régime permanent, puis affiné en <strong>boucle fermée</strong> pour obtenir un comportement stable et cohérent. Une <strong>analyse de sensibilité</strong> m’a ensuite permis d’identifier les paramètres les plus influents sur la stabilité et sur la qualité de la réponse.</p>
+
+						<p>Au-delà de la simulation, ce projet m’a appris à raisonner comme sur un cas réel : comprendre le procédé avant de chercher à le corriger, et justifier les choix de réglage par le comportement du système. C’est aussi ce que j’ai trouvé particulièrement formateur : passer d’un modèle théorique à une logique d’ingénierie structurée.</p>
+
+						<p><strong>Régulation de la vitesse d’un servomoteur à courant continu RS640E</strong></p>
+
+						<div class="project-gallery">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><span class="image fit"><img src="images/servo.png" alt="Servomoteur à courant continu"></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/simu.jpg" alt="Schéma de simulation Simulink"></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/plaque.jpg" alt="Plaque signalétique du moteur"></span></div>
+							</div>
+						</div>
+
+						<p>Dans la continuité, j’ai travaillé sur la <strong>régulation de vitesse d’un moteur à courant continu</strong>, un sujet très présent dans les systèmes embarqués, la robotique et les chaînes automatisées. À partir des données constructeur, j’ai paramétré et modélisé le moteur, puis étudié son comportement dynamique à vide et en charge sous <strong>Simulink</strong>.</p>
+
+						<p>Sur cette base, j’ai conçu un <strong>correcteur PI</strong> afin de répondre à des exigences de performance concrètes : rapidité, stabilité et suppression de l’erreur statique. J’ai comparé plusieurs jeux de paramètres afin d’évaluer le compromis entre vitesse de réponse et robustesse, ce qui m’a permis de mieux comprendre la logique de réglage dans un contexte proche des contraintes industrielles.</p>
+
+						<p>Ce projet a renforcé ma compréhension des systèmes dynamiques et de la commande, mais aussi ma capacité à exploiter un environnement de simulation comme un véritable outil d’aide à la décision. C’est précisément ce type de projet qui m’a donné envie d’aller plus loin, à terme, vers des approches de commande plus avancées sur des systèmes réels et plus complexes.</p>
+					<nav class="project-pagination" aria-label="Autres projets"><a href="#kuka"><span>← Projet précédent</span><strong>Robotique industrielle — Manipulation KUKA</strong></a><a href="#arduino"><span>Projet suivant →</span><strong>Robot autonome — Arduino</strong></a></nav></section>
+					
+					<section id="image" class="project-block">
+						<h2>Traitement d’images — Contrôle qualité non destructif de tissus composites (Python)</h2>
+
+						<div class="project-gallery">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><span class="image fit"><img src="images/tissu.jpg" alt="Tissu composite"></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/images.jpg" alt="Traitement d'image"></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/ongle.jpg" alt="Résultat analyse image"></span></div>
+							</div>
+						</div>
+
+						<p>Le traitement d’images est aujourd’hui de plus en plus utilisé dans l’industrie, notamment pour le <strong>contrôle qualité automatisé</strong>. C’est dans cette logique que j’ai développé une application Python dédiée à l’analyse d’images de <strong>tissus composites</strong> dans un contexte de <strong>contrôle non destructif</strong>.</p>
+
+						<p>L’objectif était d’extraire des indicateurs fiables à partir d’images acquises sur un dispositif expérimental, afin d’identifier d’éventuels <strong>défauts d’orientation des fibres</strong>. Ce type d’analyse est particulièrement pertinent dans des secteurs comme l’aéronautique.</p>
+
+						<p>J’ai développé ce projet dans un environnement basé sur <strong>Python</strong>, en utilisant <strong>NumPy</strong>, <strong>OpenCV</strong>, <strong>Pandas</strong> et <strong>Matplotlib</strong>. Le projet a été organisé de manière <strong>modulaire</strong>, avec plusieurs fichiers dédiés aux différentes étapes du pipeline, dans une logique proche de l’<strong>orienté objet</strong>.</p>
+
+						<p>Sur le plan technique, j’ai mis en place une chaîne de traitement complète : pré-traitement des images, binarisation, opérations morphologiques, extraction des contours, puis calcul de métriques comme le <strong>périmètre</strong> et l’<strong>aire</strong>. J’ai également automatisé l’export des résultats dans un <strong>fichier CSV</strong>.</p>
+
+						<p>Ce projet m’a appris à structurer un développement comme un vrai projet logiciel, et pas seulement comme une succession de scripts. Il m’a donné envie d’aller plus loin vers des approches encore plus avancées, comme les <strong>CNN</strong>, le traitement d’images en conditions réelles ou les pipelines de vision intégrés à des systèmes embarqués.</p>
+					<nav class="project-pagination" aria-label="Autres projets"><a href="#ia"><span>← Projet précédent</span><strong>IA appliquée — Réseaux de neurones</strong></a><a href="#kuka"><span>Projet suivant →</span><strong>Robotique industrielle — Manipulation KUKA</strong></a></nav></section>
+
+					
+
+
+					
+					<section id="arduino" class="project-block">
+						<h2>Robot mobile autonome – Arduino</h2>
+
+						<div class="project-gallery">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><span class="image fit"><img src="images/robot.png" alt="Robot Arduino"></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/code.jpeg" alt="Code Arduino"></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/tra.png" alt="Trajectoire du robot"></span></div>
+							</div>
+						</div>
+
+						<p>Ce projet m’a permis de développer un système embarqué complet, en combinant <strong>assemblage mécanique</strong>, <strong>câblage électronique</strong> et <strong>programmation sous Arduino</strong>. À partir du cahier des charges, j’ai réalisé le montage du robot, l’intégration des actionneurs et des alimentations, puis la vérification de l’ensemble avant la phase logicielle.</p>
+
+						<p>L’objectif était de faire suivre au robot une trajectoire imposée, comprenant une <strong>descente de pente</strong> puis un <strong>virage à droite d’environ 45°</strong>, tout en conservant un déplacement stable. Pour répondre à cette contrainte, j’ai développé la logique de commande sur Arduino et intégré un <strong>correcteur PI</strong> pour la régulation de la vitesse des moteurs.</p>
+
+						<p>J’ai également ajouté un <strong>système de signalisation par LEDs</strong> afin de rendre l’état du robot plus lisible pendant les essais. La phase de test a été essentielle et m’a permis d’ajuster progressivement les paramètres jusqu’à obtenir une trajectoire stable et fiable.</p>
+					<nav class="project-pagination" aria-label="Autres projets"><a href="#matlab"><span>← Projet précédent</span><strong>Asservissement — MATLAB / Simulink</strong></a><a href="#ros2"><span>Projet suivant →</span><strong>Robot LIMO — ROS2</strong></a></nav></section>
+
+					
+					
+					<section id="fpga" class="project-block">
+						<h2>Projet FPGA – Chronomètre</h2>
+
+						<div class="project-gallery">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><span class="image fit"><img src="images/cronoo.jpg" alt="Chronomètre FPGA"></span></div>
+							</div>
+						</div>
+
+						<p>Dans le cadre de ce projet, j’ai conçu et implémenté un <strong>chronomètre numérique sur FPGA</strong> en m’appuyant sur l’environnement de développement <strong>Quartus</strong> et le langage de description matérielle <strong>VHDL</strong>. L’objectif était de développer une architecture <strong>synchrone, déterministe et optimisée</strong>, capable de fonctionner en <strong>temps réel</strong> tout en respectant les contraintes propres aux systèmes numériques embarqués.</p>
+
+<p>L’architecture du système repose sur une décomposition en <strong>blocs fonctionnels modulaires</strong>. J’ai notamment développé un <strong>diviseur d’horloge</strong> (clock divider) permettant de générer des signaux à fréquence adaptée à partir de l’horloge principale du FPGA. Des <strong>compteurs synchrones</strong> ont été conçus pour assurer l’incrémentation précise du temps (secondes, sous-secondes), accompagnés de <strong>registres</strong> pour le stockage et la stabilisation des données en sortie.</p>
+
+<p>La gestion globale du système est assurée par une <strong>logique de contrôle séquentielle</strong>, implémentée sous forme de <strong>machine à états finis (FSM)</strong>. Celle-ci pilote les différentes commandes du chronomètre telles que <strong>start, stop, reset</strong>, tout en garantissant une transition d’états fiable et sans ambiguïté. Une attention particulière a été portée à la <strong>synchronisation des signaux</strong> et à la <strong>gestion des fronts d’horloge</strong> afin d’éviter tout comportement indéterminé.</p>
+
+<p>Chaque module a fait l’objet de <strong>simulations fonctionnelles</strong> et de <strong>vérifications temporelles</strong> avant son intégration dans le design global. Cette approche basée sur la <strong>validation incrémentale</strong> m’a permis d’optimiser la robustesse du système, de faciliter le débogage et d’assurer une meilleure maintenabilité du projet.</p>
+
+<p>Ce projet illustre ma maîtrise des concepts avancés en <strong>conception logique</strong>, en <strong>programmation VHDL</strong>, ainsi qu’en <strong>architecture de systèmes numériques sur FPGA</strong>. Il démontre également ma capacité à concevoir des solutions matérielles performantes, structurées et adaptées aux exigences du temps réel.</p>
+					<nav class="project-pagination" aria-label="Autres projets"><a href="#ros2"><span>← Projet précédent</span><strong>Robot LIMO — ROS2</strong></a><a href="#labview"><span>Projet suivant →</span><strong>Application LabVIEW</strong></a></nav></section>
+
+					
+					<section id="labview" class="project-block">
+						<h2>Application LabVIEW</h2>
+
+						<div class="project-gallery">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><span class="image fit"><img src="images/diagramme.jpeg" alt="Diagramme LabVIEW"></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/lab.jpeg" alt="Interface LabVIEW"></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/fa.jpeg" alt="Fonctionnement application"></span></div>
+							</div>
+						</div>
+<p>Dans le cadre de ce projet, j’ai conçu et développé une <strong>application LabVIEW</strong> en mettant l’accent sur l’<strong>expérience utilisateur</strong> et la simplicité d’utilisation. L’objectif principal était de proposer une interface intuitive permettant à l’utilisateur de sélectionner une dosette de café selon deux critères essentiels : <strong>l’intensité</strong> du café et le <strong>volume de tasse</strong> souhaité.</p>
+
+<p>Pour répondre à ce besoin, j’ai imaginé une interface claire, visuelle et facile à prendre en main, afin de rendre la navigation fluide même pour un utilisateur novice. L’application permet ainsi d’orienter rapidement le choix du produit en fonction des préférences de consommation, tout en offrant une présentation structurée des différentes options disponibles.</p>
+
+<p>Sur le plan technique, j’ai organisé le développement autour d’un <strong>VI principal</strong>, chargé de piloter la logique générale de l’application, et de plusieurs <strong>sous-VIs</strong> dédiés à des fonctions spécifiques. Cette architecture modulaire m’a permis de séparer clairement les différentes fonctionnalités du programme, d’améliorer la lisibilité du code et de faciliter les phases de maintenance, de test et d’évolution.</p>
+
+<p>J’ai également développé une <strong>fonction d’authentification</strong> permettant de sécuriser l’accès à l’interface. Cette fonctionnalité inclut une gestion du nombre d’essais autorisés ainsi qu’un accès conditionnel en fonction des informations saisies. Ce système renforce la fiabilité de l’application tout en introduisant une logique de contrôle d’accès adaptée au contexte du projet.</p>
+
+<p>Ce projet m’a permis de mettre en pratique plusieurs compétences, notamment en <strong>programmation sous LabVIEW</strong>, en <strong>conception d’interface utilisateur</strong>, en <strong>structuration modulaire d’une application</strong> et en <strong>gestion des droits d’accès</strong>. Il illustre ma capacité à développer une solution à la fois fonctionnelle, structurée et orientée utilisateur.</p>
+					<nav class="project-pagination" aria-label="Autres projets"><a href="#fpga"><span>← Projet précédent</span><strong>FPGA — Chronomètre</strong></a><a href="#elec"><span>Projet suivant →</span><strong>Conception carte électronique</strong></a></nav></section>
+
+					
+					<section id="elec" class="project-block">
+						<h2>Conception de carte électronique</h2>
+
+						<div class="project-gallery">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><span class="image fit"><img src="images/montage.jpg" alt="Montage carte électronique"></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/tci.jpg" alt="Typon carte électronique"></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/sonde.jpg" alt="Sonde d'état logique"></span></div>
+							</div>
+						</div>
+<p>Dans ce projet, je suis partie d’un <strong>schéma électrique de base</strong> représentant une <strong>sonde d’état logique</strong>, puis j’ai pris en charge l’ensemble de la chaîne de réalisation, depuis l’étude du circuit jusqu’à la <strong>conception du PCB</strong>, sa fabrication et sa validation expérimentale. L’objectif était d’obtenir une carte électronique fonctionnelle, compacte et exploitable en conditions réelles.</p>
+
+<p>J’ai d’abord analysé le schéma afin de bien comprendre le rôle de chaque composant, les liaisons électriques et le fonctionnement global du montage. Cette étape m’a permis de préparer correctement l’implantation de la carte et d’anticiper les contraintes liées à l’alimentation, à la circulation des signaux et à l’intégration des composants.</p>
+
+<p>J’ai ensuite réalisé le <strong>placement des composants</strong> sur le circuit imprimé en veillant à organiser la carte de manière cohérente, lisible et compacte. J’ai poursuivi avec le <strong>routage des pistes</strong>, en recherchant le meilleur compromis entre clarté du tracé, limitation des croisements, respect des contraintes de fabrication et qualité globale de l’implantation.</p>
+
+<p>Une fois la conception validée, j’ai préparé la phase de <strong>fabrication du PCB</strong>, puis procédé à l’assemblage et aux vérifications nécessaires. Enfin, j’ai réalisé les <strong>tests de fonctionnement</strong> afin de contrôler la continuité électrique, valider le comportement du circuit et vérifier que la sonde remplissait correctement sa fonction. Ce projet m’a permis de développer une vision concrète et complète de la chaîne de conception électronique, depuis le schéma jusqu’au prototype fonctionnel.</p>
+					<nav class="project-pagination" aria-label="Autres projets"><a href="#labview"><span>← Projet précédent</span><strong>Application LabVIEW</strong></a><a href="#punching"><span>Projet suivant →</span><strong>Punching Machine — Siemens S7-1200, TIA Portal & IHM</strong></a></nav></section>
+
+					
+					
+
+					<div class="project-top-actions">
+						<a href="index.html#projects" class="button">Retour aux projets</a>
+					</div>
+				</article></main></body></html>
