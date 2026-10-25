@@ -17,6 +17,6 @@ Ouvrir index.html dans un navigateur ou utiliser Live Server dans VS Code.
 Aucune compilation ni d?pendance ? installer.
 Pour GitHub Pages, publier la racine de la branche contenant ces fichiers.
 
-## Ressource manquante
+## Vidéos des projets
 
-La vid?o images/vd.mp4, r?f?renc?e par le projet d'empileur / d?pileur de palettes, ?tait d?j? absente avant le rangement et reste ? ajouter.
+Les vidéos référencées sont présentes dans images/ et html5up-dimension/images/. Les fichiers ve.mp4 et vd.mp4 fournis ont actuellement un contenu identique.
