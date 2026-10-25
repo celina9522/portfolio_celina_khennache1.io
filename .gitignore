@@ -1,8 +1,0 @@
-# Sauvegarde locale intégrale, non destinée à être publiée.
-sauvegarde-originale/
-sauvegarde-avant-refonte-corporate/
-reference-design/
-# Outils et résultats locaux de contrôle.
-.cache/
-tools/qa/
-verification-visuelle/
